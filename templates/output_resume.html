@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<h1 style="background-color:powderblue;">Resume Parser Utility</h1>
+<h2> Parsed Resume(s) </h2>  
+<head>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for table in tables %}
+            {{ table|safe }}
+{% endfor %}
+<button onclick="goBack()">Go Back</button>
+</body>
+</html>
